@@ -1,0 +1,101 @@
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url("img/air-travel.jpg") no-repeat center fixed;
+    background-size: cover;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.wrapper {
+    width: 400px;
+    margin: 100px auto 0;
+    padding: 65px 40px 16px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.cities {
+    position: relative;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.cities:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 30px;
+    top: 25px;
+    left: 50%;
+    background-color: #d3e6f4;
+    transform: translateX(-50%);
+}
+
+.city-name-short {
+    margin-bottom: 9px;
+    color: #3b8acf;
+    font-size: 50px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 36px;
+}
+
+.city-name-full {
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+.city-from {
+    float: left;
+}
+
+.city-to {
+    float: right;
+    text-align: right;
+}
+
+.ticket-details {
+    overflow: hidden;
+}
+
+.ticket-info {
+    margin-bottom: 22px;
+    width: 35%;
+    float: left;
+}
+
+.ticket-info-small {
+    width: 30%;
+}
+
+.ticket-info-label {
+    margin-bottom: 4px;
+    color: #aaa;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.ticket-info-value {
+    font-size: 16px;
+}
+
+.ticket-qr {
+    float: right;
+    width: 150px;
+}
+
+.ticket-qr img {
+    /* max-width: 100%; */
+    height: auto;
+    width: 100%;
+}
